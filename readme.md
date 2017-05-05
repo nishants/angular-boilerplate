@@ -1,4 +1,4 @@
-# Minimalis Web Boilerplate
+# Minimalist Web Boilerplate
 > with AngularJS and SCSS.
 
 ### Running App
