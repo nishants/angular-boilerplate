@@ -1,9 +1,5 @@
-# Gaming Experience and Alien Theme Design 
+# Minimalis Web Boilerplate
 > with AngularJS and SCSS.
-
-![UI](https://raw.githubusercontent.com/nishants/star-wars/master/doc/demo/ui-hd-min.gif)
- 
-[Link to app : nishants.site/lab/star-wars](http://nishants.site/lab/star-wars)
 
 ### Running App
 - Open dist/index.html in browser
