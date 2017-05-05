@@ -1,5 +1,5 @@
 # Minimalist Web Boilerplate
-> with AngularJS and SCSS.
+> with AngularJS, SCSS and Jade.
 
 ### Running App
 - Open dist/index.html in browser
