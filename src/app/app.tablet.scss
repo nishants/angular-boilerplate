@@ -1,0 +1,12 @@
+@import "app.mobile-tablet";
+
+body{
+  #content {
+    margin: 4*$padding $padding;
+    padding: 0px;
+    width: calc(100% - #{2*$padding});
+    box-shadow: $card_elevated_shadow;
+    border-radius: $border_radius;
+    overflow: hidden;
+  }
+}

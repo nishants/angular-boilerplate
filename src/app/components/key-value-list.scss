@@ -1,0 +1,18 @@
+$value_size: $extra_large_font;
+$label_size: $large_font;
+
+
+ul.key-value-list{
+  @extend .undo-list;
+  text-align: center;
+  > li{
+    padding: 2*$padding ;
+    .value{
+      font-size: $value_size;
+      line-height: $value_size + $padding/2;
+    }
+    .label{
+      color: $light_text;
+    }
+  }
+}

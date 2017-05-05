@@ -1,0 +1,31 @@
+$mobile_max       : 650px;
+$tablet_min       : $mobile_max;
+$tablet_max       : 910px;
+$desktop_min      : $tablet_max;
+
+body{
+  margin    : 0px;
+}
+@import "app/app";
+
+@media screen and (min-width: $desktop_min) {
+  @import "app/app.desktop";
+  .mobile-only{
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: $tablet_min)  and (max-width: $tablet_max) {
+  @import "app/app.tablet";
+  .no-mobile{
+    display: none !important;
+  }
+}
+
+
+@media screen and (max-width: $mobile_max) {
+  @import "app/app.mobile";
+  .no-mobile{
+    display: none !important;
+  }
+}

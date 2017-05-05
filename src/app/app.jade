@@ -1,0 +1,7 @@
+#app.state(ng-app='app', ng-class='{"unloading" : state.loading}', class='{{state.name}}')
+  #navigation
+  #content
+    div(ui-view)
+  #state-loader(ng-class="{'loading' : state.loading}")
+  ul#flash-messages
+    include components/flash-messages/flash-messages

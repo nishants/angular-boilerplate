@@ -1,0 +1,30 @@
+ul#flash-messages{
+  @extend .undo-list;
+  position: fixed;
+  top: $flash_messsage_position + $padding;
+  right: $padding;
+  > li {
+    @extend .resize-container;
+    padding   : $padding;
+    background: $black_tint;
+    color     : $white;
+    font-size : $large_font;
+    line-height: $large_font + $padding/2;
+
+    .icon, label, .close{
+      display: inline-block;
+      float  : left;
+      padding: 0px $padding/2;
+    }
+  }
+  li.state{
+    .icon{
+      color: $logo_green;
+    }
+  }
+  li.state-error{
+    .icon{
+      color: $error_highlight;
+    }
+  }
+}

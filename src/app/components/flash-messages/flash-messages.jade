@@ -1,0 +1,13 @@
+li.state(ng-show="state.message")
+  .icon
+    .fa.fa-spinner.fa-pulse.fa-fw
+  label(ng-bind="state.message")
+  .close(ng-click="state.message=null")
+    .fa.fa-times
+
+li.state-error(ng-if="state.error")
+  .icon
+    .fa.fa-exclamation-triangle
+  label(ng-bind="state.error")
+  .close(ng-click="state.error=null")
+    .fa.fa-times

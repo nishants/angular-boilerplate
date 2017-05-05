@@ -1,0 +1,46 @@
+.drop-down{
+  height: $input_height;
+  overflow: hidden;
+
+  .current{
+    @extend .input-component;
+    padding: 0px 2*$padding;
+
+    .placeholder, .caret{
+      color: $placeholder_color;
+      font-weight: $weight_light;
+    }
+    label.value{
+      font-weight: $weight_bold;
+    }
+    .caret{
+      line-height: inherit;
+      float: right;
+    }
+  }
+
+  ul.options{
+    @extend .undo-list;
+    @extend .resize-container;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: $button_shadow;
+    background: white;
+    cursor: pointer;
+    text-align: left;
+    > li{
+      @extend .input-component;
+      padding: 0px 0px 0px 2*$padding;
+      display: block;
+      border: 1px solid transparent;
+    }
+  }
+}
+
+.drop-down.active{
+  overflow: visible;
+  ul.options{
+    opacity: 1;
+  }
+}

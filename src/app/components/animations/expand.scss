@@ -1,0 +1,28 @@
+@keyframes expand {
+  from { @include transform(scaleX(0)); }
+  to   { @include transform(scaleX(1)); }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes expand {
+  from { @include transform(scaleX(0)); }
+  to   { @include transform(scaleX(1)); }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes expand {
+  from { @include transform(scaleX(0)); }
+  to   { @include transform(scaleX(1)); }
+}
+
+/* Internet Explorer */
+@-ms-keyframes expand {
+  from { @include transform(scaleX(0)); }
+  to   { @include transform(scaleX(1)); }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes expand {
+  from { @include transform(scaleX(0)); }
+  to   { @include transform(scaleX(1)); }
+}

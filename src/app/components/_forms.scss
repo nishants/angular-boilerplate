@@ -1,0 +1,68 @@
+
+@mixin activate(){
+  box-shadow: $button_shadow;
+}
+@mixin activateOutline(){
+  background: $button_color;
+  color: $white;
+}
+
+.form-component{
+  display: block;
+  height: $input_height;
+  line-height: $input_height;
+  outline: none;
+  border-radius: $border_radius;
+  color: $black_text;
+  @include transition($transition);
+}
+
+.form-component.active{
+  @include activate();
+}
+
+.input-component{
+  @extend .form-component;
+  border: $very_light_border;
+  background: $input_bg;
+  padding: 0px $padding*5;
+}
+
+.form-component:hover{
+  @include activate();
+}
+
+button.outline{
+  @extend .form-component;
+  border: $highlight_border;
+  padding: 0px;
+  background: transparent;
+  color: $button_color;
+  font-weight: $weight_bold;
+  border-radius: $border_radius;
+  a{
+    @extend .undo-link;
+  }
+}
+
+button.outline.cta{
+  color: $white;
+  border:  $very_light_border;
+  background-color:  $highlight_button_color;
+}
+
+button.outline:hover,
+button.outline.active{
+  background: $button_color;
+  color: $white;
+  @extend .form-component.active;
+}
+
+button.outline.cta:hover,
+button.outline.cta.active{
+  background: $highlight_button_color;
+  color: $white;
+  @extend .form-component.active;
+}
+
+@import "forms/drop-down";

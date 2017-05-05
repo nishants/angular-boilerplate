@@ -1,0 +1,15 @@
+@mixin speak-left($width, $height, $color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $height/2 $width $height/2 0;
+  border-color: transparent $color transparent transparent;
+}
+
+@mixin speak-bottom($width, $height, $color){
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: $width $height/2 0 $height/2;
+  border-color: $color transparent transparent transparent;
+}

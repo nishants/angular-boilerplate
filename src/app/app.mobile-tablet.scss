@@ -1,0 +1,18 @@
+@import "components/flash-messages/flash-messages.mobile";
+
+body{
+  background-color: $mobile_bg_color;
+  #content{
+    padding: 0px;
+    margin-top: $padding*4;
+    #section{
+      float: none;
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}
+.coming-up{
+  padding: $padding *2;
+}
+

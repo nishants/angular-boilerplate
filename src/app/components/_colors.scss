@@ -1,0 +1,71 @@
+$logo_green : #8db352;
+$logo_green_tint : rgba(141, 179, 82, 0.3);
+$highlight_contrast : #F6A623;
+$error_highlight : #ff5722;
+$contrast_color: #EEE;
+$white_shade: #fbfbfb;
+$very_light: rgba(0, 0, 0, 0.1);
+$light     : rgba(0, 0, 0, 0.2);
+$white : rgba(255, 255, 255, 0.9);
+$dim_white : rgba(255, 255, 255, 0.3);
+$black_text : rgba(0, 0, 0, 0.7);
+$light_text : rgba(0, 0, 0, 0.5);
+$very_light_text : rgba(0, 0, 0, 0.3);
+$black_tint : rgba(0, 0, 0, 0.7);
+
+
+$input_dull_bg: $contrast_color;
+
+$very_light_border: 1px solid $very_light;
+$light_border: 1px solid $light;
+$highlight_border: 1px solid  $logo_green;
+
+$mobile_bg_color: $white_shade;
+$navigation_bar_color: white;
+$navigation_bar_text: $black_text;
+$navigation_bar_select_bg: $logo_green;
+$navigation_bar_select_text: $white;
+
+$profile_bar_bg: white;
+$profile_bar_heading_bg: $contrast_color;
+$profile_bar_value_color: $logo_green;
+
+
+$tab_button_color : $contrast_color;
+$tab_body_color   : white;
+$tab_highlight_color : $logo_green;
+$tab_highlight_text : $light_text;
+
+
+$card_color: $white_shade;
+$card_light_color: $light;
+$card_highlight_bg_color: white;
+$card_text_color: $black_text;
+
+$body_color: $white_shade;
+$action_mobile_contrast: $white_shade;
+
+$button_color: $logo_green;
+$highlight_button_color: $highlight_contrast;
+
+$placeholder_color: $very_light_text;
+$input_bg: $white;
+
+$vocab_assigned_bg: $contrast_color;
+$vocab_card_bg: white;
+
+$vocab_exposure_state_bg : $contrast_color;
+$vocab_exposure_locked_color: $contrast_color;
+$vocab_exposure_playable : $highlight_contrast;
+$vocab_exposure_completed_color: $logo_green;
+$vocab_bonus_bg_color: $black_tint;
+
+$mobile_menu_bar_bg: black;
+$mobile_menu_bar_text_color: $white;
+$mobile_menu_bar_border_color: $very_light;
+
+$gameplay_bg: white;
+$game_play_hightlight_color: $logo_green;
+
+$game_progress_color: $logo_green;
+$game_progress_bg_color: $logo_green_tint;

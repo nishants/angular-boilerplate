@@ -1,0 +1,48 @@
+$loader_height      : 2px;
+$loader_color       : $logo_green;
+
+$max_load_time      : 15s;
+$quick_load_time    : 1s;
+$regular_load_time  : 3s;
+$slow_load_time     : 7s;
+
+#state-loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $top_bar_layer +1;
+  width: 100vw;
+  height: $loader_height;
+  background-color: $loader_color;
+  pointer-events: none;
+  opacity: 0;
+  box-shadow: $shadow;
+  @include transformOrigin(0 0);
+  @include transition(all $slow_time $transition_function);
+}
+
+#state-loader.loading{
+  opacity: 1;
+  @include animation(loading-state $max_load_time);
+}
+
+@keyframes loading-state {
+  0% {
+    @include transform(scaleX(0));
+  }
+  5% {
+    @include transform(scaleX(0.3));
+  }
+  10% {
+    @include transform(scaleX(0.5));
+  }
+  20% {
+    @include transform(scaleX(0.7));
+  }
+  50% {
+    @include transform(scaleX(0.85));
+  }
+  100% {
+    @include transform(scaleX(0.95));
+  }
+}

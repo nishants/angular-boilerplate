@@ -1,0 +1,21 @@
+
+$weight_normal: 400;
+$weight_bold: 500;
+$weight_light: 300;
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:#{$weight_normal}i,#{$weight_normal},#{$weight_bold}');
+$font_family: 'Ubuntu', sans-serif;
+
+
+$line_height: 18px;
+
+$giant_font: 48px;
+$sub_giant_font: 36px;
+$extra_large_font: 24px;
+$very_large_font: 21px;
+$large_font : 16px;
+$larger_font : 18px;
+$normal_font : 14px;
+$small_font : 12px;
+$smaller_font : 11px;
+$extra_small_font : 10px;

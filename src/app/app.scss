@@ -1,0 +1,31 @@
+@import "components/base";
+@import "components/vars";
+@import "components/typograhy";
+@import "components/colors";
+@import "components/material";
+
+@import "components/transitions";
+@import "components/forms";
+@import "components/rubber-stamp";
+@import "components/speak";
+@import "components/flash-messages/flash-messages";
+@import "components/state-loader/state-loader";
+@import "components/animations/fade-in";
+@import "components/key-value-list";
+@import "components/animations/expand";
+@import "components/animations/blink";
+
+body{
+  background: $body_color;
+  font-family: $font_family;
+  font-size  : $normal_font;
+  line-height: $large_font;
+  #content{
+    padding: 5*$padding 2*$padding;
+    #section{
+      float: left;
+      width: calc(100% - (#{$profile_bar_width}));
+      padding: 0px 2*$padding;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+$opacity_low : 0.5;
+$opacity_high: 1;
+
+@keyframes blink {
+  0%   { opacity: $opacity_high; }
+  50%  { opacity: $opacity_low; }
+  100% { opacity: $opacity_high; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes expand {
+  0%   { opacity: $opacity_high; }
+  50%  { opacity: $opacity_low; }
+  100% { opacity: $opacity_high; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes expand {
+  0%   { opacity: $opacity_high; }
+  50%  { opacity: $opacity_low; }
+  100% { opacity: $opacity_high; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes expand {
+  0%   { opacity: $opacity_high; }
+  50%  { opacity: $opacity_low; }
+  100% { opacity: $opacity_high; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes expand {
+  0%   { opacity: $opacity_high; }
+  50%  { opacity: $opacity_low; }
+  100% { opacity: $opacity_high; }
+}
+
